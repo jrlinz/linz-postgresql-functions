@@ -31,6 +31,9 @@ parameters define the resolution of cells.
 `p_table_name`
 : The table name to generate the grid for
 
+`p_column_name`
+: The column name to generate the grid for
+
 `p_res_x`
 : The x resolution for the grid
 
@@ -55,7 +58,7 @@ throws an exception if:
 
 **Example**
 
-    SELECT * FROM public.create_table_polygon_grid('foo', 'bar', 0.01, 0.01)
+    SELECT * FROM public.create_table_polygon_grid('foo', 'bar', 'baz', 0.01, 0.01)
 
 Installation
 ------------
